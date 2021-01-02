@@ -1,9 +1,9 @@
-def binary_search(dizi, left, right, key):
+def binary_search(dizi, sol, sağ, key):
 
 
-    while left <= right:
+    while sol <= sağ:
 
-        mid = left + (right - left) // 2
+        mid = sol + (sağ - sol) // 2
 
 
         if dizi[mid] == key:
@@ -11,11 +11,11 @@ def binary_search(dizi, left, right, key):
 
 
         elif dizi[mid] < key:
-            left = mid + 1
+            sol = mid + 1
 
 
         else:
-            right = mid - 1
+            sağ = mid - 1
 
     return -1
 
